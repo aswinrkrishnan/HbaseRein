@@ -1,0 +1,40 @@
+.pie {
+	padding: 14px 16px;
+}
+
+.pie #pie_chart {
+	margin: auto;
+	width: 220px;
+}
+
+.pie #pie_legend {
+	margin: 15px auto 0;
+	width: 299px;
+}
+
+.pie #pie_legend table tr td {
+	min-width: 13px;
+	padding: 0 5px 0 2px;
+}
+
+.rounded_edged #stacked_bar #stacked_bar_chart {
+	margin: 17px 0 0 9px;
+}
+
+.rounded_edged #stacked_bar #stacked_bar_chart_legend {
+	margin: -49px 0 11px 80px;
+}
+
+.rounded_edged #stacked_bar #stacked_bar_chart_legend table td {
+	padding: 0 5px;
+}
+
+.square_edged #grid svg {
+	position: relative;
+	top: -13px;
+	left: 35px;
+	font-size: 14px;
+}
+.x path{
+	display: none;
+}

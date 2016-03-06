@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+	<constant name="struts.enable.DynamicMethodInvocation" value="false" />
+	<constant name="struts.devMode" value="false" />
+	<constant name="struts.custom.i18n.resources" value="ApplicationResources" />
+
+	<package name="default" extends="struts-default" namespace="/">
+		<result-types>
+			<result-type name="tiles"	class="org.apache.struts2.views.tiles.TilesResult" />
+			<result-type name="json" class="org.apache.struts2.json.JSONResult" />
+		</result-types>
+		<global-results>
+			<result name="login">/login.jsp</result>
+		</global-results>
+
+		<action name="loginAction" class="com.tcs.abim.hbaserein.action.ExplorerAction"
+			method="login">
+			<result name="success" type="tiles">baseLayout</result>
+			<result name="error">/login.jsp</result>
+		</action>
+		<action name="fetchTableData" class="com.tcs.abim.hbaserein.action.ExplorerAction"
+			method="fetchTableData">
+			<result name="success" type="json">
+				<param name="noCache">true</param>
+				<param name="excludeNullProperties">true</param>
+				<param name="root">tableHashMap</param>
+			</result>
+		</action>
+		<action name="fetchTableMetaInfo" class="com.tcs.abim.hbaserein.action.ExplorerAction"
+			method="fetchTableMetaInfo">
+			<result name="success" type="json">
+				<param name="noCache">true</param>
+				<param name="excludeNullProperties">true</param>
+				<param name="root">tableVO</param>
+			</result>
+		</action>
+		<action name="fetchColumnFamily" class="com.tcs.abim.hbaserein.action.ExplorerAction"
+			method="fetchColumnFamily">
+			<result name="success" type="json">
+				<param name="noCache">true</param>
+				<param name="excludeNullProperties">true</param>
+				<param name="root">colFamilyList</param>
+			</result>
+		</action>
+		<action name="insertRow" class="com.tcs.abim.hbaserein.action.ExplorerAction"
+			method="insertRow">
+			<result name="success" type="json">
+				<param name="noCache">true</param>
+				<param name="excludeNullProperties">true</param>
+			</result>
+		</action>
+		<action name="searchTable" class="com.tcs.abim.hbaserein.action.ExplorerAction"
+			method="searchTable">
+			<result name="success" type="json">
+				<param name="noCache">true</param>
+				<param name="excludeNullProperties">true</param>
+				<param name="root">tableHashMap</param>
+			</result>
+		</action>
+		<action name="deleteRow" class="com.tcs.abim.hbaserein.action.ExplorerAction"
+			method="deleteRow">
+			<result name="success" type="json">
+				<param name="noCache">true</param>
+				<param name="excludeNullProperties">true</param>
+			</result>
+		</action>
+		
+		
+	</package>
+</struts>

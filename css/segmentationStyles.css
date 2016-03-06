@@ -1,0 +1,54 @@
+#segmentContainer {
+	width: 847px;
+	height: 300px;
+	background-color: #f0f0f0;
+	position: relative;
+}
+
+#segments {
+	display: none;
+}
+
+ul {
+	padding: 0;
+	margin: 0;
+}
+
+.block {
+	margin: 5px 0 0 5px;
+	float: left;
+	height: 100px;
+	position: relative;
+	overflow: hidden;
+}
+
+span.segmentspan {
+	position: absolute;
+	z-index: 0;
+	width: 100%;
+	text-align: center;
+	color:#fff;
+	font-weight: bold;
+}
+
+.caption {
+	display: none; 
+	z-index: 5;
+	background-color: rgba(0, 0, 0, 0.6);
+	position: absolute;
+	/* width: 60%;
+	height: 20%; */
+	max-height:20px;
+	overflow:hidden;
+	text-align: center;
+	right: 0;
+	top: 0;
+	color: #fff;
+	padding: 2px 10px;
+	position: absolute;
+	cursor: pointer;
+}
+
+.children {
+	display: none;
+}

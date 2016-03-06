@@ -1,0 +1,204 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* reset styles */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, a, strong, dl, dt, dd, ol, ul, li, fieldset, form, input, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+	margin:0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+}
+ol, ul {
+	list-style:none;
+}
+blockquote, q {
+	quotes:none;
+}
+table {
+	border-collapse:collapse;
+	border-spacing:0;
+}
+img {
+	border:none;
+	outline:none;
+}
+input:focus {
+	outline:none;
+}
+/* common styles*/
+body {
+	font:normal 12px/22px Arial, Helvetica, sans-serif;
+	color:#363636;
+	background:#dbdbdb;
+}
+::-moz-selection {
+ color:#fff;
+ background: #a52626;
+}
+::selection {
+	color:#fff;
+	background:#a52626;
+}
+.clear {
+	clear:both;
+}
+/* page layout */
+#main_wrapper {
+	width:100%;
+}
+#header {
+	width:100%;
+	background:#fff;
+}
+#header .header_inner {
+	width:1200px;
+	height:66px;
+	margin:auto;
+	background:url("../images/header-bg-graphics.png") no-repeat 653px top;
+}
+#header .header_inner .logo {
+	width:202px;
+	margin:13px 0 0 0;
+	float:left;
+}
+#header .header_inner .header_info {
+	width:220px;
+	margin:8px 0 0 0;
+	float:right;
+}
+#header .header_inner .header_info .user_info, #header .header_inner .header_info .user_settings {
+	float:left;
+}
+#header .header_inner .header_info .user_info {
+	min-height:51px;
+	padding:7px 16px 0 0;
+	margin:0 21px 0 0;
+	background:url(../images/v-line.png) no-repeat right top;
+}
+#header .header_inner .header_info .user_info span {
+	display:block;
+}
+#header .header_inner .header_info .user_info .message_text {
+	font:bold 11px/normal Arial, Helvetica, sans-serif;
+	color:#7d7d7d;
+}
+#header .header_inner .header_info .user_info .user {
+	font:bold 16px/16px Arial, Helvetica, sans-serif;
+	color:#545454;
+}
+#header .header_inner .header_info .user_settings ul {
+	float:left;
+}
+#header .header_inner .header_info .user_settings ul li {
+	float:left;
+}
+#header .header_inner .header_info .user_settings ul li.v_sep {
+	min-height:46px;
+	padding:12px 16px 0 0;
+	margin:0 21px 0 0;
+	background:url(../images/v-line.png) no-repeat right top;
+}
+#header .header_inner .header_info .user_settings a {
+	display:block;
+}
+#header .header_inner .header_info .user_settings a.messages {
+	width:18px;
+	height:22px;
+	padding:0 24px 0 0;
+	background:url(../images/notification-icon.png) no-repeat left top;
+	position:relative;
+}
+#header .header_inner .header_info .user_settings a.messages span.notification_count {
+	min-width:12px;
+	height:11px;
+	padding:1px 3px 3px 3px;
+	font:normal 12px/normal Arial, Helvetica, sans-serif;
+	color:#fff;
+	text-align:center;
+	border-radius:2px;
+	background:#d73d3b;
+	display:block;
+	position:absolute;
+	left:24px;
+}
+#header .header_inner .header_info .user_settings a.messages span.notification_pointer {
+	width:4px;
+	height:6px;
+	background:url(../images/notification-arrow.png) no-repeat left top;
+	display:block;
+	position:absolute;
+	left:20px;
+	top:6px;
+}
+#header .header_inner .header_info .user_settings a.settings {
+	width:23px;
+	height:24px;
+	margin:10px 0 0 0;
+	background:url(../images/settings-icon.png) no-repeat left top;
+}
+.logo img {
+   margin-top: -7px;   
+}
+#nav {
+	width:100%;
+	height:62px;
+	background:url(../images/nav-bg-repeat.png) repeat-x left top;
+}
+#nav .nav_inner {
+	width:1200px;
+	height:41px;
+	margin:auto;
+}
+#nav .nav_inner ul {
+	clear:both;
+}
+#nav .nav_inner ul li {
+	background:url(../images/nav-sep.png) no-repeat -4px 2px;
+	float:left;
+}
+#nav .nav_inner li a {
+	height:31px;
+	padding:15px 17px 0 17px;
+	font:normal 16px/normal Arial, Helvetica, sans-serif;
+	color:#ededed;
+	text-decoration:none;
+	text-align:center;
+	display:block;
+}
+#nav .nav_inner li.home_link a{
+	background:url(../images/home-icon.png) no-repeat center center;
+	min-width:73px;
+}
+#nav .nav_inner li.home_link a:hover {
+	
+	background:url(../images/home-icon.png) no-repeat center center #a22b29;
+}
+#nav .nav_inner li a:hover {
+	-webkit-transition:background .7s ease;
+	-moz-transition:background .7s ease;
+	-o-transition:background .7s ease;
+	-ms-transition:background .7s ease;
+	transition:background .7s ease;
+	background:#a52626;
+}
+#content {
+	width:1200px;
+	padding:0 0 30px;
+ 	margin:auto;
+}
+#footer {
+	width:100%;
+	background:#fff;
+}
+#footer > div {
+	width:1200px;
+	height:31px;
+	padding:19px 0 9px;
+	margin:auto;
+	font:normal 12px/normal Arial, Helvetica, sans-serif;
+	color:#b0b0b0;
+	text-align:center;
+}
+.selectedLink{
+	background-color: #a22b29 !important;
+}

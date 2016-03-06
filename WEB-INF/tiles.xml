@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+<tiles-definitions>
+	<definition name="baseLayout" template="/baseLayout.jsp">
+		<put-attribute name="title" value="H-Base R E I N" />
+		<put-attribute name="header" value="/header.jsp" />		
+		<put-attribute name="leftContent" value="/homeScreenLeftContent.jsp" />
+		<put-attribute name="rightContent" value="/homeScreenRightContent.jsp" />
+		<put-attribute name="footer" value="/footer.jsp" />		
+	</definition>
+</tiles-definitions>
