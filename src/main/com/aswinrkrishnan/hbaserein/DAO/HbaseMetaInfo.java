@@ -18,6 +18,7 @@ public class HbaseMetaInfo {
 
 		HBaseAdmin admin = new HBaseAdmin(ApplicationUtil.configuration);
 
+
 		HTableDescriptor tableDiscriptor = new HTableDescriptor(tableName);
 
 		tableDiscriptor = admin.getTableDescriptor(tableName.getBytes());
