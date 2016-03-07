@@ -1,4 +1,4 @@
-package com.tcs.abim.hbaserein.action;
+package com.aswinrkrishnan.hbaserein.action;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -6,15 +6,15 @@ import java.util.LinkedHashMap;
 import java.util.Map;
 
 import com.opensymphony.xwork2.ActionSupport;
-import com.tcs.abim.hbaserein.DAO.HbaseMetaInfo;
-import com.tcs.abim.hbaserein.DAO.HbaseTableOP;
-import com.tcs.abim.hbaserein.beans.QualifierValueVO;
-import com.tcs.abim.hbaserein.beans.TableVO;
+import com.aswinrkrishnan.hbaserein.DAO.HbaseMetaInfo;
+import com.aswinrkrishnan.hbaserein.DAO.HbaseTableOP;
+import com.aswinrkrishnan.hbaserein.beans.QualifierValueVO;
+import com.aswinrkrishnan.hbaserein.beans.TableVO;
 
 public class ExplorerAction extends ActionSupport {
 
 	/**
-	 * 
+	 *
 	 */
 
 	ArrayList<String> tables;
@@ -107,7 +107,7 @@ public class ExplorerAction extends ActionSupport {
 		this.selectedTable = selectedTable;
 	}
 
-	
+
 
 	public LinkedHashMap<String, Map<String, QualifierValueVO>> getTableHashMap() {
 		return tableHashMap;

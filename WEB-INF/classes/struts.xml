@@ -68,7 +68,7 @@
 				<param name="excludeNullProperties">true</param>
 			</result>
 		</action>
-		
-		
+
+
 	</package>
 </struts>

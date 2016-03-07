@@ -1,4 +1,4 @@
-package com.tcs.abim.hbaserein.action;
+package com.aswinrkrishnan.hbaserein.action;
 
 import com.opensymphony.xwork2.ActionContext;
 import com.opensymphony.xwork2.ActionInvocation;

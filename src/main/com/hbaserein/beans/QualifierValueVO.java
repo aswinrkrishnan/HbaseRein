@@ -1,11 +1,11 @@
-package com.tcs.abim.hbaserein.beans;
+package com.aswinrkrishnan.hbaserein.beans;
 
 public class QualifierValueVO {
 
 	String colFamily;
-	
+
 	String qualifier;
-	
+
 	String value;
 
 	public QualifierValueVO(String colFamily, String qualifier, String value) {

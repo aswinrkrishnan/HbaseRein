@@ -1,4 +1,4 @@
-package com.tcs.abim.hbaserein.servlets;
+package com.aswinrkrishnan.hbaserein.servlets;
 
 import java.io.IOException;
 
@@ -9,14 +9,14 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import com.tcs.abim.hbaserein.util.ApplicationUtil;
+import com.aswinrkrishnan.hbaserein.util.ApplicationUtil;
 
 /**
  * Servlet implementation class ReinStartup
  */
 public class ReinStartup extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-       
+
     /**
      * @see HttpServlet#HttpServlet()
      */
