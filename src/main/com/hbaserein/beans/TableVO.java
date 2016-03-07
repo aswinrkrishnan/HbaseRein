@@ -1,4 +1,4 @@
-package com.tcs.abim.hbaserein.beans;
+package com.aswinrkrishnan.hbaserein.beans;
 
 import java.util.ArrayList;
 
@@ -6,12 +6,12 @@ import org.apache.hadoop.hbase.HColumnDescriptor;
 
 
 public class TableVO {
-	
+
 	 private HColumnDescriptor[] colFamList;
 	 private ArrayList<String> startKeyStrings;// = new ArrayList<String>();
 	 private ArrayList<String> endKeyStrings;// = new ArrayList<String>();
 	 private ArrayList<String> colFamNames;
-	
+
 	 public HColumnDescriptor[] getColFamList() {
 		return colFamList;
 	}
@@ -22,11 +22,11 @@ public class TableVO {
 			colFamNames.add(colDisc.getNameAsString());
 		}
 	}
-	
+
 	public ArrayList<String> getColFamNames(){
 		return colFamNames;
 	}
-	
+
 	public ArrayList<String> getStartKeyStrings() {
 		return startKeyStrings;
 	}

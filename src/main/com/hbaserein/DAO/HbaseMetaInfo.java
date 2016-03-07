@@ -1,4 +1,4 @@
-package com.tcs.abim.hbaserein.DAO;
+package com.aswinrkrishnan.hbaserein.DAO;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -10,8 +10,8 @@ import org.apache.hadoop.hbase.client.HTable;
 import org.apache.hadoop.hbase.client.HTableInterface;
 import org.apache.hadoop.hbase.util.Pair;
 
-import com.tcs.abim.hbaserein.beans.TableVO;
-import com.tcs.abim.hbaserein.util.ApplicationUtil;
+import com.aswinrkrishnan.hbaserein.beans.TableVO;
+import com.aswinrkrishnan.hbaserein.util.ApplicationUtil;
 
 public class HbaseMetaInfo {
 	public static TableVO getTableDetails(String tableName) throws IOException {
@@ -27,8 +27,8 @@ public class HbaseMetaInfo {
 		ArrayList<String> startKeyStrings = new ArrayList<String>();
 		ArrayList<String> endKeyStrings = new ArrayList<String>();
 
-		
-		
+
+
 		HTable table = new HTable(ApplicationUtil.configuration, tableName);
 		Pair<byte[][], byte[][]> startEndKeys = table.getStartEndKeys();
 

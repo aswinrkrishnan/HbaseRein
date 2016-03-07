@@ -1,4 +1,4 @@
-package com.tcs.abim.hbaserein.DAO;
+package com.aswinrkrishnan.hbaserein.DAO;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -31,8 +31,8 @@ import org.apache.hadoop.hbase.filter.SubstringComparator;
 import org.apache.hadoop.hbase.filter.ValueFilter;
 import org.apache.hadoop.hbase.util.Bytes;
 
-import com.tcs.abim.hbaserein.beans.QualifierValueVO;
-import com.tcs.abim.hbaserein.util.ApplicationUtil;
+import com.aswinrkrishnan.hbaserein.beans.QualifierValueVO;
+import com.aswinrkrishnan.hbaserein.util.ApplicationUtil;
 
 public class HbaseTableOP {
 
@@ -145,8 +145,8 @@ public class HbaseTableOP {
 				}
 				filterList.addFilter(filter);
 			}
-			
-			
+
+
 
 			if (columnQualifier != null && !columnQualifier.equals("")) {
 				switch (Condition.valueOf(columnQualifierCondn)) {
@@ -164,7 +164,7 @@ public class HbaseTableOP {
 				}
 				filterList.addFilter(filter);
 			}
-			
+
 
 			if (columnValue != null && !columnValue.equals("")) {
 				switch (Condition.valueOf(columnValueCondn)) {
@@ -175,11 +175,11 @@ public class HbaseTableOP {
 				case equals:
 					filter = new ValueFilter(CompareOp.EQUAL,
 							new BinaryComparator(columnValue.getBytes()));
-					break;				
+					break;
 				}
 				filterList.addFilter(filter);
 			}
-			
+
 			tableScan.setFilter(filterList);
 
 			ResultScanner selectedTableScanner = table.getScanner(tableScan);

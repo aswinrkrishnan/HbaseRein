@@ -1,4 +1,4 @@
-package com.tcs.abim.hbaserein.util;
+package com.aswinrkrishnan.hbaserein.util;
 
 import java.io.IOException;
 import java.util.Properties;
@@ -20,7 +20,6 @@ public class ApplicationUtil {
 			configProp.load(Thread.currentThread().getContextClassLoader()
 					.getResourceAsStream("clusterConf.properties"));
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		String quorum = configProp.getProperty("quorum");

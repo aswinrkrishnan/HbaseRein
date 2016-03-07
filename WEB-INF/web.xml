@@ -27,7 +27,7 @@
     <description></description>
     <display-name>ReinStartup</display-name>
     <servlet-name>ReinStartup</servlet-name>
-    <servlet-class>com.tcs.abim.hbaserein.servlets.ReinStartup</servlet-class>
+    <servlet-class>com.aswinrkrishnan.servlets.ReinStartup</servlet-class>
     <load-on-startup>1</load-on-startup>
   </servlet>
   <servlet-mapping>
